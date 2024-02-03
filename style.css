@@ -1,0 +1,106 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 {
+    background-image: url(./image/image1.png);
+}
+
+.pimg2 {
+    background-image: url(./image/image2.png);
+}
+
+.pimg3 {
+    background-image: url(./image/image3.png);
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    min-height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 27px;
+
+}
+
+.h2 {
+    text-align: 50%;
+    text-transform: uppercase;
+}
+
+.section1_light {
+    padding: 70px 50px 70px 50px;
+    text-align: center;
+}
+
+.section1_dark {
+    padding: 70px 50px 70px 50px;
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+.textBg {
+    text-transform: uppercase;
+    background: #666;
+    padding: 20px;
+}
+
+.textBg1 {
+    text-transform: uppercase;
+    background: rgb(204, 228, 228);
+    padding: 20px;
+}
+
+.textBg2 {
+    text-transform: uppercase;
+    background: rgb(100, 197, 100);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .ptext {
+        font-size: calc(15px + 2vw);
+        /* Increase base size for smaller screens */
+        letter-spacing: 2px;
+    }
+
+    .section1_light,
+    .section1_dark {
+        padding: 10vw;
+        /* Increase padding for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ptext {
+        font-size: calc(14px + 3vw);
+        /* Further increase for very small screens */
+    }
+
+    .section1_light,
+    .section1_dark {
+        padding: 15vw;
+    }
+}
